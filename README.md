@@ -7,6 +7,12 @@ The software is compatible with both Windows 10 and Linux.
 Wikipedia: The Gopher protocol is a communications protocol designed for distributing, searching, and retrieving documents in Internet Protocol networks. The design of the Gopher protocol and user interface is menu-driven, and presented an alternative to the World Wide Web in its early stages, but ultimately fell into disfavor, yielding to the Hypertext Transfer Protocol (HTTP). The Gopher ecosystem is often regarded as the effective predecessor of the World Wide Web.
 # Getting Started
 
+## Compilers
+##### Linux:
+* GCC 9.x 
+##### Windows 10:
+* Mingw
+
 ## How to install
 Compile with CMakeLists.txt, this software is compatible with Linux and Windows 10.
 Execute the following command in the cmake-build-debug folder.
@@ -15,6 +21,12 @@ $ cmake
 $ make
 $ ./gopherLinux
 ```
+
+For use with the ubuntu distribution you need to run the following command
+```sh
+$ sudo apt-get install build-essential zlib1g-dev
+```
+
 The structure of this project is 100% compatible with Clion and other JetBrains products.
 ## CommandLine Option
 For each option having {param}, replace param with an appropriate argument.<br>
@@ -52,7 +64,6 @@ You can find the stress script in the root of the project, It's a file bash call
 
 # Known Issues
 Lost the compatibility with macOS due to an unresolved Apple bug. 90% of the software is compatible with macOS X Mojave. <br>
-Lost the compatibility with Ubuntu, it's easy to fix. <br>
 ### Future Works
 Clean the code and fix the known issues.
 # Authors
